@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+sourceCompatibility = 1.6
+version = '0.0'
+mainClassName = 'practice.Main'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.mongodb', name: 'mongo-java-driver', version: '2.12.5'
+    compile(group: "com.github.fge", name: "json-schema-validator", version: "2.2.6")
+    compile(group: "com.fasterxml.jackson.core", name: "jackson-databind", version: "2.7.0")
+}
+
+jar.manifest {
+    attributes(
+        "Manifest-Version"       : "0.0",
+        "Created-By"             : "Adaptive Computing, Inc.",
+        "Specification-Title"    : "Gradle Mongo Practice",
+        "Implementation-Title"   : "gradle-mongo",
+    )
+}
+
+task hello << {
+    println '******* hello world'
+}

@@ -1,0 +1,13 @@
+{
+  "id":1,
+  "name":"a",
+  "price":1,
+  "tags":["abc"],
+  "dimensions":{
+     "length":1,
+     "width":2,
+     "height":3
+  },
+  "nodes":[],
+  "bogus":1
+}
